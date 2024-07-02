@@ -2,7 +2,7 @@
 
 julia_version = "1.10.0-rc2"
 manifest_format = "2.0"
-project_hash = "e8c3861d218b7aee57953bcc690238875240d5ec"
+project_hash = "2a75861aca8926b28f6b9d51dd33fb9381cf40b3"
 
 [[deps.ADTypes]]
 git-tree-sha1 = "ae44a0c3d68a420d4ac0fa1f7e0c034ccecb6dc5"
@@ -1102,10 +1102,12 @@ uuid = "e6d7a502-be5c-5049-a927-8d60e566555d"
 version = "0.2.2"
 
 [[deps.LegendDataManagement]]
-deps = ["Dates", "Distributed", "Format", "Glob", "IntervalSets", "JSON", "LRUCache", "LinearAlgebra", "MIMEs", "Markdown", "Measurements", "Pkg", "Printf", "ProgressMeter", "PropDicts", "PropertyDicts", "PropertyFunctions", "StaticStrings", "StructArrays", "Tables", "ThreadPinning", "TypedTables", "UUIDs", "Unitful"]
-git-tree-sha1 = "e3ceea9247d10e82bc70bb3cf0acb6a521f32697"
+deps = ["ClusterManagers", "Dates", "Distributed", "Format", "Glob", "IntervalSets", "JSON", "LRUCache", "LinearAlgebra", "MIMEs", "Markdown", "Measurements", "Pkg", "Printf", "ProgressMeter", "PropDicts", "PropertyDicts", "PropertyFunctions", "StaticStrings", "StructArrays", "Tables", "ThreadPinning", "TypedTables", "UUIDs", "Unitful"]
+git-tree-sha1 = "349029efba8170dee934070e9c5f2994426ebbdc"
+repo-rev = "dev"
+repo-url = "https://github.com/legend-exp/LegendDataManagement.jl.git"
 uuid = "9feedd95-f0e0-423f-a8dc-de0970eae6b3"
-version = "0.3.0"
+version = "0.2.8"
 
     [deps.LegendDataManagement.extensions]
     LegendDataManagementRecipesBaseExt = "RecipesBase"
