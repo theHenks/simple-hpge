@@ -326,11 +326,11 @@
     "pz": {
         "default": {
             "min_tau": {
-                "val" : 200.0,
+                "val" : 50.0,
                 "unit" : "µs"
             },
             "max_tau": {
-                "val": 800.0,
+                "val": 250.0,
                 "unit": "µs"
             },
             "nbins": 1000,
