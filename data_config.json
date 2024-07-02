@@ -1,0 +1,8 @@
+{
+    "datafolder": "/mnt/artemis02/projects/LEGEND/CUBE3/ASIC-HPGe",
+    "run": "run-202311-011",
+    "configfolder": "./config/",
+    "parsfolder": "./pars/",
+    "logfolder": "./log/",
+    "figurefolder": "./figures/"
+}
