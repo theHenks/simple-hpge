@@ -1,0 +1,32 @@
+{
+    "default": {
+        "blmean": {
+            "min": 10000.0,
+            "max": 20000.0,
+            "sigma": 3.0,
+            "relative_cut": 0.01,
+            "n_bins_fraction": 0.01
+        },
+        "blsigma": {
+            "min": 0.0,
+            "max": 100.0,
+            "sigma": 3.0,
+            "relative_cut": 0.01,
+            "n_bins_fraction": 0.01
+        },
+        "blslope": {
+            "min": -0.1,
+            "max": 0.1,
+            "sigma": 3.0,
+            "relative_cut": 0.01,
+            "n_bins_fraction": 0.05
+        },
+        "t0": {
+            "min": 30.0,
+            "max": 40.0
+        },
+        "e_trap": {
+            "min": 0.0
+        }
+    }
+}

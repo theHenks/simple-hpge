@@ -1,0 +1,10 @@
+{
+    "default": {
+        "th228_lines":  [583.191,  727.330,  860.564,     2103.53,    2614.51],
+        "th228_names":  ["Tl208a", "Bi212a", "Tl208b",  "Tl208SEP", "Tl208FEP"],
+        "left_window_sizes":   [25,      25,      25,      25,      30],
+        "right_window_sizes":  [25,      25,      25,      25,      30],
+        "n_bins": 15000,
+        "quantile_perc": 0.995
+    }
+}

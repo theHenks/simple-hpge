@@ -1,23 +1,23 @@
 {   
     "default": {
         "enc_pickoff_trap": {
-            "val": 40.0,
+            "val": 30.0,
             "unit": "µs"
         },
         "enc_pickoff_zac": {
-            "val": 41.0,
+            "val": 30.0,
             "unit": "µs"
         }, 
         "enc_pickoff_cusp": {
-            "val": 41.0,
+            "val": 30.0,
             "unit": "µs"
         }, 
         "flt_length_cusp": {
-            "val": 38.0,
+            "val": 30.0,
             "unit": "µs"
         }, 
         "flt_length_zac": {
-            "val": 38.0,
+            "val": 30.0,
             "unit": "µs"
         }, 
         "bl_window": {
@@ -26,7 +26,7 @@
                 "unit": "µs"
             }, 
             "max": {
-                "val": 39.0,
+                "val": 31.0,
                 "unit": "µs"
             }
         },
@@ -42,11 +42,11 @@
         },
         "current_window": {
             "min": {
-                "val": 43.0,
+                "val": 30.0,
                 "unit": "µs"
             }, 
             "max": {
-                "val": 62.0,
+                "val": 125.0,
                 "unit": "µs"
             }
         },
@@ -70,7 +70,7 @@
                     "unit": "µs"
                 },
                 "stop": {
-                    "val": 16.0,
+                    "val": 13.0,
                     "unit": "µs"
                 },
                 "step": {
@@ -100,7 +100,7 @@
                     "unit": "µs"
                 },
                 "stop": {
-                    "val": 16.0,
+                    "val": 13.0,
                     "unit": "µs"
                 },
                 "step": {
@@ -130,7 +130,7 @@
                     "unit": "µs"
                 },
                 "stop": {
-                    "val": 16.0,
+                    "val": 13.0,
                     "unit": "µs"
                 },
                 "step": {
@@ -239,16 +239,16 @@
     "optimization": {
         "default": {
             "trap": {
-                "min_enc": -400.0,
-                "max_enc": 400.0,
-                "nbins_enc_sigmas": 1000,
+                "min_enc": -20.0,
+                "max_enc": 20.0,
+                "nbins_enc_sigmas": 6000,
                 "rel_cut_fit_enc_sigmas": 0.1,
                 "ft_fixed": {
                     "val": 1.5,
                     "unit": "µs"
                 },
-                "min_e_fep": 80000.0,
-                "max_e_fep": 480000.0,
+                "min_e_fep": 2000.0,
+                "max_e_fep": 8000.0,
                 "nbins_e_fep": 1000,
                 "rel_cut_fit_e_fep": 0.5
             },
