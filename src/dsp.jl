@@ -275,18 +275,18 @@ end
         @info "Processing file: $(basename(filename))"
         data    = lh5open(filename, "r")
         @info "Using output file: $(basename(outfilename))"
-        # if reprocess && isfile(outfilename)
-        #     @info "Reprocess $(basename(outfilename)), remove old DSP."
-        #     rm(outfilename)
-        # else
-        #     try 
-        #         lh5open(outfilename, "cw")
-        #     catch e
-        #         @warn "LoadError: $e"
-        #         @warn "Filename $(basename(outfilename)) seems broken, remove it."
-        #         rm(outfilename)
-        #     end
-        # end
+        if reprocess && isfile(outfilename)
+            @info "Reprocess $(basename(outfilename)), remove old DSP."
+            rm(outfilename)
+        else
+            try 
+                lh5open(outfilename, "cw")
+            catch e
+                @warn "LoadError: $e"
+                @warn "Filename $(basename(outfilename)) seems broken, remove it."
+                rm(outfilename)
+            end
+        end
         outdata = lh5open(outfilename, "cw")
     end
 
