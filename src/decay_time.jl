@@ -40,6 +40,7 @@ plot(wvfs_fep[1:20], label="Tl208FEP", legend=:outertopright, xunit=u"µs")
 dsp_meta = readlprops(joinpath(config_folder, "dsp_config.json"))
 dsp_config = DSPConfig(dsp_meta.default)
 
+# extract decay times of all waveforms with a simple DSP
 decay_times = dsp_decay_times(wvfs_fep, dsp_config)
 
 
@@ -67,6 +68,6 @@ savefig(joinpath(figures_folder, "decay_time_fit.png"))
 pars_db.pz.fit = result
 pars_db.pz.τ = result.μ
 
+@info "Found decay time: $(round(u"µs", result.μ, digits=3))"
 # write pars to file
 writelprops(pars_file, pars_db)
-
